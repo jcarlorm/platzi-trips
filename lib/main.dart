@@ -1,57 +1,27 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_example/description_place.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
+
+  String descriptionDummy = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
         appBar: AppBar(
           title: Center(
-            child: Text("Inicio 2.0"),
+            child: Text("Platzi Trips"),
           ),
         ),
-        body: Center(
-          child: Stack(
-            children: <Widget>[
-              Image.network(
-                  "https://img.blogs.es/anexom/wp-content/uploads/2018/06/android-publicidad-portada.jpg",
-                fit: BoxFit.cover,
-                height: double.infinity
-              ),
-              Center(
-                child: Container(
-                  height: 50.0,
-                  color: Colors.black45,
-                  child: Center(
-                    child: Text(
-                      "Android Image",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 20.0,
-                      ),
-                    ),
-                  ),
-                ),
-              )
-            ]
-          )
-        )
+        body: new DescriptionPlace("Bahamas", 4, descriptionDummy),
       )
     );
   }
