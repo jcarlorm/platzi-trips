@@ -12,6 +12,8 @@ class DescriptionPlace extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
+    double starTop = 363.0;
+
     final description = Container(
       margin: EdgeInsets.only(
         top: 5.0,
@@ -30,7 +32,7 @@ class DescriptionPlace extends StatelessWidget {
 
     final star = Container (
       margin: EdgeInsets.only(
-        top: 323.0,
+        top: starTop,
         right: 3.0
       ),
 
@@ -42,7 +44,7 @@ class DescriptionPlace extends StatelessWidget {
 
     final starHalf = Container (
       margin: EdgeInsets.only(
-          top: 323.0,
+          top: starTop,
           right: 3.0
       ),
 
@@ -54,7 +56,7 @@ class DescriptionPlace extends StatelessWidget {
 
     final starBorder = Container (
       margin: EdgeInsets.only(
-          top: 323.0,
+          top: starTop,
           right: 3.0
       ),
 
@@ -69,7 +71,7 @@ class DescriptionPlace extends StatelessWidget {
       children: <Widget>[
         Container(
           margin: EdgeInsets.only(
-            top: 320.0,
+            top: 360.0,
             left: 20.0,
             right: 20.0
           ),

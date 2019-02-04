@@ -14,6 +14,13 @@ class ButtonPurple extends StatelessWidget {
         right: 20.0
       ),
       child: InkWell(
+        onTap: () {
+          Scaffold.of(context).showSnackBar(
+              SnackBar(
+                content: Text("Navegando"),
+              )
+          );
+        },
         child: Container(
           height: 50.0,
           width: 180.0,
