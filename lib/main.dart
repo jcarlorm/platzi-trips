@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_example/description_place.dart';
+import 'package:flutter_app_example/review_list.dart';
+import 'package:flutter_app_example/header_appbar.dart';
 
 void main() => runApp(MyApp());
 
@@ -16,12 +18,17 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-        appBar: AppBar(
-          title: Center(
-            child: Text("Platzi Trips"),
-          ),
+        body: Stack(
+          children: <Widget>[
+            ListView(
+              children: <Widget>[
+                DescriptionPlace("Bahamas", 4, descriptionDummy),
+                ReviewList()
+              ],
+            ),
+            HeaderAppBar()
+          ],
         ),
-        body: new DescriptionPlace("Bahamas", 4, descriptionDummy),
       )
     );
   }
