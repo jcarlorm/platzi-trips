@@ -10,7 +10,7 @@ class HomeTrips extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Stack(
+    return  Stack (
       children: <Widget>[
         ListView(
           children: <Widget>[
