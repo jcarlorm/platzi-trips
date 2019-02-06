@@ -10,6 +10,7 @@ class CardTravelList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 350.0,
+      padding: EdgeInsets.all(20.0),
       child: ListView(
           children: <Widget>[
           CardTravel("Knucles Mountains Range", dummyDescription, "12828" , "assets/img/mountain.jpeg")
