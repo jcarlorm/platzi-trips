@@ -6,7 +6,7 @@ class HeaderProfile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: <Widget>[
-        GradientProfile("Profile"),
+        GradientProfile("Profile1"),
         CardTravelList()
       ],
     );
