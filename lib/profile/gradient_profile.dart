@@ -13,7 +13,7 @@ class GradientProfile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    final headerProfile = Container(
+    return Container(
       height: 390.0,
       decoration: BoxDecoration(
           gradient: LinearGradient(
@@ -62,6 +62,5 @@ class GradientProfile extends StatelessWidget {
       ),
     );
 
-    return headerProfile;
   }
 }
