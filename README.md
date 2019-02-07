@@ -2,4 +2,4 @@
 
 ![alt text](https://github.com/jcarlorm/platzi-trips/blob/master/assets/img/inicio.jpg)
 
-![alt text] (https://github.com/jcarlorm/platzi-trips/blob/master/assets/img/perfil.jpg)
+![alt text](https://github.com/jcarlorm/platzi-trips/blob/master/assets/img/perfil.jpg)
