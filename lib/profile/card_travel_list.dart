@@ -9,8 +9,12 @@ class CardTravelList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 350.0,
-      padding: EdgeInsets.all(20.0),
+      margin: EdgeInsets.only(
+        top: 270.0,
+        left: 20,
+        right: 20
+      ),
+      height: 250.0,
       child: ListView(
           children: <Widget>[
           CardTravel("Knucles Mountains Range", dummyDescription, "12828" , "assets/img/mountain.jpeg")
